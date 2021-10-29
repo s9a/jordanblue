@@ -1,0 +1,50 @@
+:root {
+  font-size: calc(1em + 2vmax);
+  line-height: 1.2;
+  --lunar: #102986;
+  --solar: #f0f710;
+  --ink: var(--solar);
+  --oil: var(--lunar);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ink: var(--lunar);
+    --oil: var(--solar);
+  }
+}
+
+::selection {
+  color: var(--oil);
+  background: var(--ink);
+}
+
+.swatch :any-link,
+.swatch {
+  color: var(--ink);
+  background: var(--oil);
+  outline-color: var(--ink);
+  transition: 29ms;
+}
+
+.stage {
+  margin: auto;
+}
+
+.mc {
+  display: table;
+  margin: auto;
+  margin-block-start: 10vh;
+  margin-inline-start: 3vw;
+  padding: 5vh 3vw;
+}
+
+.mc dt,
+.mc dd {
+  margin: auto;
+}
+
+.fyi {
+  max-width: 22em;
+  font-size: calc(2rem/3);
+}
