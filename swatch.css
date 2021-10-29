@@ -19,12 +19,7 @@
   background: var(--ink);
 }
 
-:any-link {
-  color: inherit;
-  background: inherit;
-  outline-color: inherit;
-}
-
+.swatch :any-link,
 .swatch {
   color: var(--ink);
   background: var(--oil);
